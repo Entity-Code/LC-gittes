@@ -1,0 +1,105 @@
+/* regole generali */
+*{
+   margin:0;
+   padding:0;
+   box-sizing: border-box;
+}
+
+body{
+   background-color: brown;
+   font-family: Verdana, Arial;
+}
+.clearfix::after {
+	content: "";
+	display: table;
+	clear:both;
+}
+
+/* fine regole generali */
+
+#container{
+   margin: 10px auto;
+   width:60%;
+   /* debug */
+   /* height:100vh;
+   background-color: red; */
+   /* debug */
+}
+
+/* header */
+header{
+   margin-bottom: 20px;
+   /* debug */
+   height:300px;
+   background-color: green;
+   /* debug */
+}
+nav{
+   /* debug */
+   /* height:100px;
+   background-color: blue; */
+   /* debug */
+}
+/* fine header */
+
+
+/* main */
+main{
+
+}
+/* main */
+
+
+
+
+
+
+/* aside (feed and widgets) */
+aside{
+   float:left;
+   width: 20%;
+   /* debug */
+   /* height:200px;
+   background-color: lightblue; */
+   /* debug */
+}
+/* fine aside */
+
+
+/* section (parte centrale) */
+section {
+   float: left;
+   width: 50%;
+   margin: 0 5%;
+   /* debug */
+   /* height:400px;
+   background-color: blue; */
+   /* debug */
+}
+
+.white-box{
+   background-color: #fff;
+   border-radius:5px;
+   padding:10px;
+   margin-bottom: 30px;
+   font-size: 14px;
+   color: #000;
+}
+/* fine section */
+
+
+
+
+
+
+
+
+
+/* footer */
+footer{
+   /* debug */
+   height:100px;
+   background-color: red;
+   /* debug */
+}
+/* fine footer */

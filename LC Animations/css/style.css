@@ -1,0 +1,24 @@
+*{
+   margin:0;
+   padding:0;
+   box-sizing: border-box;
+}
+
+
+.blue {
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  position: absolute;
+  animation-name: muoviti;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes muoviti {
+  0% { left:0; top:0;}
+  15% { left:calc(100% - 100px); top:0;}
+  50% { left:calc(100% - 100px); top:calc(100% - 100px);}
+  55% { left:0; top:calc(100% - 100px);}
+  100% { top:0; left: 0;}
+}

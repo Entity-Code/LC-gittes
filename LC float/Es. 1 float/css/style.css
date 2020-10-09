@@ -1,0 +1,55 @@
+/* regole generali */
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+/* header */
+header{
+   /* debug */
+   background-color: yellow;
+   height: 200px;
+   /*fine debug */
+}
+
+
+/* parte principale di pagina */
+main{
+   /* debug */
+   background-color: green;
+   /* height: 200px; */
+   /*fine debug */
+}
+main::after{
+   content:"";
+   display: table;
+   clear:both;
+}
+aside{
+   float: left;
+   width:30%;
+   margin-right: 2%;
+   /* debug */
+   background-color: pink;
+   height: 200px;
+   /*fine debug */
+}
+section{
+   float: left;
+   width:68%;
+   /* debug */
+   background-color: purple;
+   height: 300px;
+   /*fine debug */
+}
+
+
+
+/* footer */
+footer{
+   /* debug */
+   background-color: lightblue;
+   height: 100px;
+   /*fine debug */
+}
