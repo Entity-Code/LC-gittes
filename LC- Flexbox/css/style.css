@@ -9,16 +9,25 @@
 
 
 
-.container-flex{
+header{
+   background: red;
+   height: 192px;
    display: flex;
-   height: 100vh;
-   justify-content: center;
    align-items: center;
-
+   justify-content: space-around;
+   flex-wrap: wrap;
 }
 
-.red{
-   width: 100px;
-   height: 100px;
-   background-color: red;
+.logo{
+   font-size: 45px;
+}
+
+.menu{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-around;
+}
+
+.menu-item{
+   padding: 0 15px;
 }
