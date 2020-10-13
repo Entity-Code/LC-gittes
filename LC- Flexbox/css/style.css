@@ -14,8 +14,21 @@ header{
    background-color: pink;
 }
 
+/* sezione customer */
+#customer{
+   background-color: lightgray;
+   padding: 30px 10%;
+}
+.payoff, .link{
+   text-align: center;
+   padding: 20px 0;
+}
 
-
+.customer-logos{
+   display: flex;
+   justify-content: space-around;
+   flex-wrap: wrap;
+}
 
 
 
@@ -39,6 +52,24 @@ div, nav{
    min-height: 100px;
 }
 /* debug */
+
+/* gestione mobile customers */
+@media all and (max-width: 1080px){
+   .logoitem{
+      text-align: center;
+      width: 33%;
+   }
+}
+
+@media all and (max-width: 555px){
+   .logoitem{
+      text-align: center;
+      width: 100%;
+   }
+
+}
+
+
 
 
 @media all and (max-width: 768px){
