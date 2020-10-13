@@ -4,30 +4,52 @@
    box-sizing: border-box;
 }
 
-
-
-
-
-
 header{
-   background: red;
-   height: 192px;
    display: flex;
-   align-items: center;
-   justify-content: space-around;
-   flex-wrap: wrap;
 }
 
-.logo{
-   font-size: 45px;
+.mobilemenu{
+   display: none;
+   flex-basis: 100px;
+   background-color: pink;
 }
 
-.menu{
-   display: flex;
-   flex-wrap: wrap;
-   justify-content: space-around;
+
+
+
+
+
+/* debug */
+.logo {
+   background-color: red;
+   flex-basis: 300px;
 }
 
-.menu-item{
-   padding: 0 15px;
+.mainnav{
+   background-color: blue;
+   flex-grow: 1;
+}
+
+.navlogin{
+   background-color: green;
+   flex-basis: 300px;
+}
+
+div, nav{
+   min-height: 100px;
+}
+/* debug */
+
+
+@media all and (max-width: 768px){
+
+   header{
+      justify-content: space-between;
+   }
+   .mobilemenu {
+      display: block;
+   }
+   .mainnav, .navigation, .navlogin{
+      display: none;
+   }
 }
