@@ -7,17 +7,23 @@
 
 
 // Stampa del primo valore (undefined)
-var miaStringa;
-console.log("valore prima assegnazione", miaStringa);
+var miaStringaUno, miaStringaDue, miaStringaTotale;
+var numeroUno, numeroDue, numeroTot
 
-// Stampa del secondo valore ("ciao")
-miaStringa ="ciao";
-alert(miaStringa);
-console.log("valore seconda assegnazione", miaStringa);
+//Lavoriamo con le stringhe
+miaStringaUno = "CIAO";
+miaStringaDue = 10;
 
-// Stampa del primo valore (5)
-miaStringa = 5;
-alert(miaStringa);
-console.log("valore terza assegnazione", miaStringa);
+console.log(miaStringaUno, miaStringaDue);
 
-document.getElementById("titolo").innerHTML = miaStringa;
+miaStringaTotale = miaStringaUno + miaStringaDue;
+
+document.getElementById("titolo").innerHTML = miaStringaTotale;
+
+//Lavoriamo con i numeri
+
+numeroUno = 10;
+numeroDue = 7;
+numeroTot = numeroUno + numeroDue;
+
+document.getElementById("stampanumero").innerHTML = numeroTot;
