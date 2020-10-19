@@ -1,5 +1,5 @@
 // chiedere all'utente quanti anni
-var eta = prompt("Scrivi quanti anni hai");
+var eta = parseInt(prompt("Scrivi quanti anni hai"));
 var mail = prompt ("Scrivi la tua mail");
 var annoCorrente = 2020;
 var annoNascita;
