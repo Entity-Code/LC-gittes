@@ -1,9 +1,23 @@
-//Esempio uno
-document.writeln("Hello World!");
+// dichiarazione variabili globali
+// var variabileUno;
+// var variabileDue;
 
-//Esempio document
-alert("Hello World! in alert...");
+// oppure
+// var variabileUno, variabileDue;
 
-//Esempio tre
-//Inseriamo il testo nell'h1 vuoto da js
-document.getElementById("titolo").innerHTML = "sono un titolo inserito dinamicamente da js, non è fantastico?";
+
+// Stampa del primo valore (undefined)
+var miaStringa;
+console.log("valore prima assegnazione", miaStringa);
+
+// Stampa del secondo valore ("ciao")
+miaStringa ="ciao";
+alert(miaStringa);
+console.log("valore seconda assegnazione", miaStringa);
+
+// Stampa del primo valore (5)
+miaStringa = 5;
+alert(miaStringa);
+console.log("valore terza assegnazione", miaStringa);
+
+document.getElementById("titolo").innerHTML = miaStringa;
