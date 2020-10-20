@@ -1,3 +1,5 @@
+// messaggio
+var msg;
 //input: richiesta inserimento parola1
 var parola1 = prompt("Inserisci la prima parola");
 
@@ -12,12 +14,15 @@ console.log(parola1.length, parola2.length);
    //se parola1 è più lunga creo messaggio corrispondente
    if (parola1.length > parola2.length) {
       // creo messaggio corrispondente
+      msg = "parola1 è più lunga";
       console.log("parola1 è più lunga");
    } else if (parola2.length > parola1.length) { //se parole2 è più lunga
       // creo messaggio corrispondente
+      msg = "parola2 è più lunga";
       console.log("parola2 è più lunga");
    } else { //altrimenti se sono uguali
       // creo messaggio corrispondente
+      msg = "parola1 è più lunga";
       console.log("le parole sono lunghe uguali");
    }
    // se parola2 è più lunga creo messaggio corrispondente
@@ -25,3 +30,4 @@ console.log(parola1.length, parola2.length);
    // altrimenti se sono uguali creo messaggio corrispondente
 
 //output: per dire quale parola è più lunga
+document.getElementById("titolo").innerHTML = msg;
