@@ -1,29 +1,11 @@
-// dichiarazione variabili globali
-// var variabileUno;
-// var variabileDue;
+// chiedere all'utente quanti anni
+var eta = parseInt(prompt("Scrivi quanti anni hai"));
+var mail = prompt ("Scrivi la tua mail");
+var annoCorrente = 2020;
+var annoNascita;
+console.log(eta);
 
-// oppure
-// var variabileUno, variabileDue;
-
-
-// Stampa del primo valore (undefined)
-var miaStringaUno, miaStringaDue, miaStringaTotale;
-var numeroUno, numeroDue, numeroTot
-
-//Lavoriamo con le stringhe
-miaStringaUno = "CIAO";
-miaStringaDue = 10;
-
-console.log(miaStringaUno, miaStringaDue);
-
-miaStringaTotale = miaStringaUno + miaStringaDue;
-
-document.getElementById("titolo").innerHTML = miaStringaTotale;
-
-//Lavoriamo con i numeri
-
-numeroUno = 10;
-numeroDue = 7;
-numeroTot = numeroUno + numeroDue;
-
-document.getElementById("stampanumero").innerHTML = numeroTot;
+annoNascita = annoCorrente - eta;
+console.log("l'output sarà: ", annoNascita);
+// dire all'utente in che anno è nato
+document.getElementById("titolo").innerHTML = "Hai " + eta + " anni, quindi " + "sei nato nel " + annoNascita + "." + " Ti invieremo questo dato inaspettato alla mail: " + mail;
