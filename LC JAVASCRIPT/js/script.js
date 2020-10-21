@@ -1,8 +1,9 @@
-var elemento = document.getElementById("nomeutente");
-var nome = prompt("inserisci il tuo nome");
+var element = document.getElementById("titolo");
 
-elemento.innerHTML = nome;
-
-// elemento.style.color = "red";
-
-elemento.className = elemento.classList + "redText";
+//al click dell'elemento "titolo" scatenami un numero casuale 0-10
+element.addEventListener("click",
+	function() {
+	  //codice
+     var numero = Math.random() * 10;
+     alert(numero);
+}  );
