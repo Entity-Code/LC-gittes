@@ -1,9 +1,22 @@
-var element = document.getElementById("titolo");
+// iL SOFTWARE DEVE CHIEDERE ALL'UTENTE IL SUO NOME E IL SESSO CON DUE PROMPT DIVERSI.
+// SULLA PAGINA HTML DEVE APPARIRE "CIAO <NOME>",
+// IL COLORE DEL NOME DEVE ESSERE AZZURRO O ROSA A SECONDA DEL SESSO INSERITO
 
-//al click dell'elemento "titolo" scatenami un numero casuale 0-10
-element.addEventListener("click",
-	function() {
-	  //codice
-     var numero = Math.random() * 10;
-     alert(numero);
-}  );
+// selezione elemento
+var el = document.getElementById("titolo");
+
+// chiedo nome nomeutente
+var nome = prompt("inserisci il nome");
+
+// chiedo sesso utente
+var sesso = prompt("inserisci il sesso M o F");
+
+// output nome in pagina
+document.getElementById("titolo").innerHTML = "Ciao" + nome;
+
+// gestire colore output
+if (sesso === "M") {
+   el.className = "blu"; //classe "blu" presa dal css
+} else {
+   el.className = "rosa"; //classe "rosa" presa dal css
+}
