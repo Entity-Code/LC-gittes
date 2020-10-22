@@ -1,9 +1,11 @@
-// Crea un array contenente 5 nomi e stampali a schermo
+// Crea un array di numeri e stampa solo i numeri dispari
 
-var mioArray = ["nome0", "nome1", "nome2", "nome3", "nome4", 1, 2, 3];
+var numeri = [1,2,3,4,5,6,7,8];
 
-// finché i < mioArray.length stampami la lista items in ordine da 0 all'ultimo item
-for (var i = 0; i < mioArray.length; i++) {
-	mioArray[i];
-	console.log(mioArray[i]);
+for (var i = 0; i < numeri.length; i++) {
+	numeri[i];
+	//se l'elemento su cui sei è dispari, allora lo stampi, fino alla fine degli items dell'array
+	if (numeri[i] % 2 !== 0) {
+			console.log(numeri[i]);
+	}
 }
