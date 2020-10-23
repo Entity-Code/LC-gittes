@@ -1,30 +1,35 @@
-// array
-var nomi = ["nome1","nome2","nome3","nome4","nome5"];
+//richiesta mail
+var richiesta = prompt("inserisci la mail");
+//lista mail
+var email = ["marco@gmail.com", "giuglia@hotmail.it", "marta@yahoo.it", "giorgio@gmail.it"];
+console.log(richiesta);
 
-// versione con il ciclo for
-/*
-for (var i = 0; i < nomi.length; i++) {
-	console.log(nomi[i]);
+//email non ancora trovata
+var emailTrovata = false;
+
+// for (var i = 0; i < email.length; i++) {
+// 	console.log(i);
+// 	var compilazione = email[i];
+// 	// condizione mail corretta
+// 	if (compilazione === richiesta) { //compara l'email di quell'iterazione con quella inserita dall'utente
+// 		emailTrovata = true; //mail trovata
+// 	}
+// }
+
+var i = 0;
+while (i < email.length && emailTrovata === false) { //finché non hai finito l'array, e non hai ancora trovato niente, continua a cercare
+	console.log(i);
+	var compilazione = email[i];
+	// condizione mail corretta
+	if (compilazione === richiesta) { //compara l'email di quell'iterazione con quella inserita dall'utente
+		emailTrovata = true; //mail trovata
+	}
+	i++;
 }
-*/
 
-// versione con il ciclo while
-var i = 0; //contatore
-while (i < nomi.length) {  //condizione
-	console.log(nomi[i]);
-
-	i++; //incremento-decremento il contatore i, BLOCCANDO IL CICLO
+// Hai trovato l'email?
+if (emailTrovata === true) {
+	console.log("Benvenuto!");
+} else {
+	console.log("Accesso negato");
 }
-// e se i = 10? i nomi sono 5 nell'array, quindi il ciclo non verrà mai eseguito
-
-
-
-//versione con il ciclo do-while
-var i = 10; //contatore
-do {
-	console.log(nomi[i]);
-
-	i++; //incremento-decremento il contatore i
-}while (i < nomi.length) //condizione
-
-//SIMILE AL WHILE MA CONTROLLA LA CONDIZIONE SOLO DOPO AVER ESEGUITO
