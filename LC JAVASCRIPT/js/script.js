@@ -1,30 +1,28 @@
-// // Crea un array di numeri e stampa solo i numeri dispari
-//
-// var numeri = [1,2,3,4,5,6,7,8];
-//
-// for (var i = 0; i < numeri.length; i++) {
-// 	numeri[i];
-// 	//se l'elemento su cui sei è dispari, allora lo stampi, fino alla fine degli items dell'array
-// 	if (numeri[i] % 2 !== 0) { //se il resto del numero è diverso da 0 = dispari
-// 			console.log(numeri[i]);
-// 	}
-// }
+//VERIFICA ESERCIZIO EMAIL
+
+//CHIEDI ALL'UTENTE LA SUA EMAIL, CONTROLLA CHE SIA NELLA LISTA DI CHI PUò ACCEDERE, STAMPA UN MESSAGGIO APPROPRIATO SULL'ESITO DEL CONTROLLO
 
 
+//richiesta mail
+var richiesta = prompt("inserisci la mail");
+//lista mail
+var email = ["marco@gmail.com", "giuglia@hotmail.it", "marta@yahoo.it", "giorgio@gmail.it"];
+console.log(richiesta);
 
+//email non ancora trovata
+var emailTrovata = false;
 
-
-
-// partendo da un x di nomi stampare tutto
-
-var nomi = ["Dario", "Angelo", "Federica", "Giorgia"];
-var testoStampato = "";
-
-//ciclo per traversare l'array
-
-for (var i = 0; i < nomi.length; i++) {
-	// nomi[i];
-	// console.log(nomi[i]);
-	testoStampato = testoStampato + nomi[i] + "<br>";
+for (var i = 0; i < email.length; i++) {
+	var compilazione = email[i];
+	// condizione mail corretta
+	if (compilazione === richiesta) { //compara l'email di quell'iterazione con quella inserita dall'utente
+		emailTrovata = true; //mail trovata
+	}
 }
-document.getElementById("stampa").innerHTML = testoStampato;
+
+// Hai trovato l'email?
+if (emailTrovata === true) {
+	console.log("Benvenuto!");
+} else {
+	console.log("Accesso negato");
+}
