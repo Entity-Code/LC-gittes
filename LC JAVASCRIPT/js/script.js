@@ -1,19 +1,24 @@
-// CODICE PER CAPIRE LO SCOPE
-a = 0;
-b = "bungiorno";
-var c = "ciao";
+var text;
+var fruits = prompt("Inserisci un frutto");
 
-var valoreRitornato = saluta();
-console.log("Il valore ritornato dalla funzione è: ", valoreRitornato);
+switch (fruits) {
+   case "Banana":
+     text = "Banana is good!";
+     break;
+   case "Orange":
+     text = "I am not a fan of orange.";
+     break;
+   default:
+     text = "I have never heard of that fruit.";
+}
 
-console.log("a is " + a);
-console.log("b is " + a);
+// // equivalente di quanto sopra
+// if (fruits === "Banana") {
+//    text = "Banana is good!";
+// } else if (fruits === "Orange"){
+//    text = "I am not a fan of orange.";
+// } else {
+//    text = "I have never heard of that fruit.";
+// }
 
-function saluta() {
-   var d = "asd";
-   console.log("a is " + a);
-   var b = a + 1;
-   console.log("b is " + b);
-   console.log(c);
-   return "Ho finito!";
-}  
+console.log(text);
