@@ -1,32 +1,19 @@
-// // Genero 10 numeri random utilizzando una funzione
-//
-// //max = è l'argomento che creiamo noi che corrisponde al range massimo nel quale verranno creati i numeri random (da 0 a 50)
-// function generamiUnNumeroRandom(max) {
-//    if (max) { //se max è stato inserito, allora ritornami il valore random
-//    return Math.floor(Math.random() * max) + 1;
-//    } else { //se non è stato inserito, allora stampa questo messaggio
-//       return "non hai inserito il valore dell'argomento";
-//    }
-// }
-//
-//
-// //generami 10 numeri, ognuno random con un range da 0 a max (che inseriamo noi al richiamo della funzione che mi genera un random number da 0 a (50))
-// for (var i = 0; i < 10; i++) {
-//    var numero = generamiUnNumeroRandom();
-//    console.log(numero);
-// }
+// CODICE PER CAPIRE LO SCOP
+a = 0;
+b = "bungiorno";
+var c = "ciao";
 
-// Verifico attraverso una funzione se il numero passato dell'utente è pari o dispari
+var valoreRitornato = saluta();
+console.log("Il valore ritornato dalla funzione è: ", valoreRitornato);
 
-var inputUser = parseInt(prompt("inserisci un numero"));
+console.log("a is " + a);
+console.log("b is " + a);
 
-console.log(verificaPariODispari(inputUser));
-
-//definisco la funzione
-function verificaPariODispari(num) {
-   if (num % 2 === 0) {
-      return "pari";
-   } else {
-      return "dispari";
-   }
+function saluta() {
+   var d = "asd";
+   console.log("a is " + a);
+   var b = a + 1;
+   console.log("b is " + b);
+   console.log(c);
+   return "Ho finito!";
 }
