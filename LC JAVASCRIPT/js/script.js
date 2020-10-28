@@ -1,4 +1,4 @@
-// CODICE PER CAPIRE LO SCOP
+// CODICE PER CAPIRE LO SCOPE
 a = 0;
 b = "bungiorno";
 var c = "ciao";
