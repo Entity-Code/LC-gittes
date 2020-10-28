@@ -16,4 +16,4 @@ function saluta() {
    console.log("b is " + b);
    console.log(c);
    return "Ho finito!";
-}
+}  
