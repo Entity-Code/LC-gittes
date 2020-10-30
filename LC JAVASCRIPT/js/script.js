@@ -1,24 +1,30 @@
-var text;
-var fruits = prompt("Inserisci un frutto");
+// Generatore di “nomi cognomi” casuali: prendendo a caso un nome e un cognome da una lista di nomi e da una lista di cognomi, Gatsby vuole generare una falsa lista di invitati.
 
-switch (fruits) {
-   case "Banana":
-     text = "Banana is good!";
-     break;
-   case "Orange":
-     text = "I am not a fan of orange.";
-     break;
-   default:
-     text = "I have never heard of that fruit.";
+//creo array nomi
+var nomi = ["Mattia ","Mario ","Martina ","Sofia ","Luigi ","Francesco "];
+console.log("Lista nomi: " + nomi);
+//creo array cognomi
+var cognomi = ["Barretta ","Tummolillo ","Rossi ","Ferrari ","Russo ","Bianchi "];
+console.log("Lista cognomi: " + cognomi);
+
+
+var casualNomiCognomi = [];
+//casual
+i = 0;
+while (i < nomi.length) {
+   var casualNome = randomNum(nomi.length);
+   var casualCognome = randomNum(cognomi.length);
+   casualNomiCognomi.push(nomi[casualNome] + cognomi[casualCognome]);
+   i++;
 }
+console.log(casualNomiCognomi);
 
-// // equivalente di quanto sopra
-// if (fruits === "Banana") {
-//    text = "Banana is good!";
-// } else if (fruits === "Orange"){
-//    text = "I am not a fan of orange.";
-// } else {
-//    text = "I have never heard of that fruit.";
-// }
 
-console.log(text);
+// random Num
+function randomNum(max) {
+   if (max) { //se max è stato inserito, allora ritornami il valore random
+   return Math.floor(Math.random() * max);
+} else { //sennò 0
+      return 0;
+   }
+}
