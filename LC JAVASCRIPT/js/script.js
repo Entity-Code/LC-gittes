@@ -1,18 +1,19 @@
-//Creare un bottone che on hover aggiunga una classe che cambia il colore dl testo e la toglie quando il mouse esce dal bottone. Con il doppio click cambio il testo in "cliccato".
-// Con un click solo non fa niente
+// Creare il titolo di un paragrafo e un bottone che permette di espandere il testo inizialmente nascosto
 
-var bottone = $("button");
+// partiamo con la variabile di stato aperto = false
+$("p").hide();
+var aperto = false;
 
-bottone.hover(
-   function () {
-      bottone.addClass("red")
-   }, function () {
-      bottone.removeClass("red")
+$("button").click(
+   function(){
+      // se la variabile aperto è false, allora mostralo, e falla diventare true
+      if (aperto === false) {
+         $("p").show();
+         aperto = true;
+      // altrimenti rinascondila, e rimetti aperto = false
+      } else {
+         $("p").hide();
+         aperto = false;
+      }
    }
-);
-
-bottone.dblclick(
-   function () {
-      bottone.text("cliccato000OOOOOoo");
-   }
-);
+)
