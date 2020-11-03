@@ -1,16 +1,12 @@
-// Rendere visibile la scritta "Live Coding" dentr il cerchio arancione quando passo con il mouse sul cerchio.
-var elemento = $("#cerchio span");
-elemento.fadeOut();
-
-$("#cerchio").hover(mouseIn,mouseOut);
+$(document).ready(function () {
 
 
-//funzioni
 
-function mouseIn() {
-   elemento.fadeIn();
-}
+   $("p").hide();
 
-function mouseOut() {
-   elemento.fadeOut();
-}
+   $("button").click(
+      function () {
+         $("p").slideToggle();
+      }
+   );
+});
