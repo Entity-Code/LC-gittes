@@ -6,7 +6,9 @@ $(document).ready(function () {
 
    $("button").click(
       function () {
-         $("p").slideToggle();
-      }
-   );
-});
+         $("p").slideToggle(1000,
+         function functionName() {
+            alert("testo finito");
+         });
+      });
+   });
