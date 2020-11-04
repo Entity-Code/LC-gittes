@@ -4,23 +4,31 @@
    box-sizing: border-box;
 }
 
-.squares{
+/* regole header */
+header {
    display: flex;
-   justify-content: space-between;
-   align-items: center;
-   flex-wrap: wrap;
+   min-height: 100px;
+   border: solid 1px red;
+   justify-content: flex-end;
 }
 
-.square{
-   width: 20%;
-   height: 200px;
-   background-color: lightblue;
-   border: 2px solid black;
+.mainnav > ul > li {
+   display: inline-block;
+   padding: 5px;
 }
 
-.red{
-   background-color: red;
+.dropitem{
+   position: relative;
 }
-.green{
-   background-color: green;
+
+.dropdown{
+   display: none;
+   position: absolute;
+   top: 30px;
+   left: 0;
+
+}
+
+.dbloc{
+   display: block;
 }
