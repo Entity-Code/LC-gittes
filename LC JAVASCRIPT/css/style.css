@@ -4,22 +4,16 @@
    box-sizing: border-box;
 }
 
-
-
-
-.display{
-   display: none;
+.squares{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   flex-wrap: wrap;
 }
 
-#cerchio{
-   font-size: 50px;
-   width: 500px;
-   height: 500px;
-   background-color: orange;
-   border-radius: 50%;
-   display: flex;
-   color: #fff;
-   justify-content: center;
-   align-items: center;
-
+.square{
+   width: 20%;
+   height: 200px;
+   background-color: lightgreen;
+   border: 2px solid black;
 }

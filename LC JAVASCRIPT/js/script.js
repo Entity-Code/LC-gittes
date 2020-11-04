@@ -1,18 +1,22 @@
+// Creare 10 quadrati vuoti.
+// Con jQuery, dentro ognuno scrivere un numero random
+
 $(document).ready(function () {
 
-   //mettiamo i div nascosti
-   $(".faq p").hide();
+//per ogni quadrato .square
+$(".square").each(function () {
+   // scrivimi in ognuno un randomNum da 0 a 100 diverso
+   $(this).text(randomNum(100));
+});
 
-   //selezioniamo il padre, e con this.children("p") selezioniamo l'elemento suo figlio diretto a cui vogliamo applciare . slideToggle
-   $(".faq").click(function () {
-      // figlio diretto
-      $(this).children("p").slideToggle("fast");
-      // // discendente generale
-      // $(this).find("p").slideToggle("fast");
-   });
-
-
-
-
+// //così stamperebbe tutti i numeri uguali nei qudrati
+// $(".square").text(randomNum(100));
 
 });
+
+
+//funzioni
+// random Num
+function randomNum(max) {
+   return Math.floor(Math.random() * max) + 1;
+}
