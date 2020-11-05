@@ -1,15 +1,11 @@
-//dropdown google simile
+// Il programma chiede all'utente quanti secondi mancano alla cottura della pasta.
+// Dopo il tempo indicato, appare un alert()
 
-$(document).ready(function () {
+var secondi = parseInt(prompt("quanto manca alla pasta?"));
 
+console.log(secondi);
 
-   $("li.dropitem").click(function() {
-      $(".dropdown").toggleClass("dbloc");
-   })
-
-
-
-});
-
-
-//funzioni
+// dopo 5 secondi apparirà l'alert 
+setTimeout(function () {
+   alert("La pasta è pronta!!");
+}, secondi * 1000)
