@@ -1,11 +1,14 @@
-// Il programma chiede all'utente quanti secondi mancano alla cottura della pasta.
-// Dopo il tempo indicato, appare un alert()
+//Simulare un countdown di 10 secondi che alla fine dice Buon Anno!
 
-var secondi = parseInt(prompt("quanto manca alla pasta?"));
+var mioInterval = setInterval(countdown, 500);
 
-console.log(secondi);
-
-// dopo 5 secondi apparirà l'alert 
-setTimeout(function () {
-   alert("La pasta è pronta!!");
-}, secondi * 1000)
+var count = 10;
+function countdown() {
+   if (count > 0) {
+      console.log(count);
+      count--;
+   } else {
+      console.log("Buon anno!!");
+      clearInterval(mioInterval);
+   }
+}
