@@ -1,12 +1,13 @@
-var proprieta;
-
 var palla = {
-  "colore": ['red', 'blue'], //il colore è un array
-  'tipo': 'pallina da golf',
+  "prezzo": 12,
+  "tipo": "pallina da golf"
 };
 
-proprieta = "colore";
+palla.peso = 14;
 
 
-// se volessi farmi ritornare il proprieta, devo usare l'altro metodo :
-console.log(palla[proprieta]);
+// key = nome proprietà
+//palla = oggetto
+for (var key in palla) {
+  console.log(key + ": " + palla[key]); //stampami key:obj dell'oggetto palla
+}
