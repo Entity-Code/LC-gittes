@@ -1,11 +1,12 @@
-// creo un oggetto
+var proprieta;
 
 var palla = {
   "colore": ['red', 'blue'], //il colore è un array
   'tipo': 'pallina da golf',
 };
 
-// se volessi farmi ritornare il tipo, scrivo :
-console.log(palla.tipo);
-// se volessi farmi ritornare il colore, scrivo :
-console.log(palla.colore);
+proprieta = "colore";
+
+
+// se volessi farmi ritornare il proprieta, devo usare l'altro metodo :
+console.log(palla[proprieta]);
