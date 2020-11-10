@@ -1,13 +1,20 @@
-var palla = {
-  "prezzo": 12,
-  "tipo": "pallina da golf"
-};
+//array contenente due oggetti
+var classi =
+  [
+   {   //obj 1
+      'nome' : 'Classe 1',
+      'numero_studenti' : 10
+   },
+   {  //obj 2
+      'numero_studenti' : 15
+   } 
+];
 
-palla.peso = 14;
+console.log(classi[0]);
 
-
-// key = nome proprietà
-//palla = oggetto
-for (var key in palla) {
-  console.log(key + ": " + palla[key]); //stampami key:obj dell'oggetto palla
-}
+// traverso "classi" per traversare l'oggetto nell'indice 0
+// for (var i = 0; i < array.length; i++) {
+//    for (var key in classi[0]) {
+//
+//    }
+// }
