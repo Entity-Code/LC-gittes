@@ -1,20 +1,18 @@
-//array contenente due oggetti
-var classi =
-  [
-   {   //obj 1
-      'nome' : 'Classe 1',
-      'numero_studenti' : 10
-   },
-   {  //obj 2
-      'numero_studenti' : 15
-   } 
-];
+// 1A:
+// Creare un oggetto palla che abbia le seguenti proprietà. Nome = palla
+// Peso = 10
 
-console.log(classi[0]);
+var palla = {
+   "nome": 'palla',
+   "peso": 10
+}
 
-// traverso "classi" per traversare l'oggetto nell'indice 0
-// for (var i = 0; i < array.length; i++) {
-//    for (var key in classi[0]) {
-//
-//    }
-// }
+console.log("Dati di default: " , palla);
+
+// 1B:
+// Attraverso un prompt dare la possibilità all’utente di modificare il peso della palla.
+
+var modifica = parseInt(prompt("Inserisci il peso da dare alla palla"));
+palla["peso"] = modifica;
+
+console.log("Dati modificati: " , palla);
