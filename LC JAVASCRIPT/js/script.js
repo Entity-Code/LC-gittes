@@ -1,18 +1,15 @@
-// 1A:
-// Creare un oggetto palla che abbia le seguenti proprietà. Nome = palla
-// Peso = 10
+console.log(constantArray);
 
-var palla = {
-   "nome": 'palla',
-   "peso": 10
+const constantArray = [];
+constantArray.push(1);
+console.log(constantArray);
+// [1];
+
+const constantObject = {
+  'name' : 'Pippo'
 }
+constantObject.age = 20
+constantObject.name = "Franco";
 
-console.log("Dati di default: " , palla);
 
-// 1B:
-// Attraverso un prompt dare la possibilità all’utente di modificare il peso della palla.
-
-var modifica = parseInt(prompt("Inserisci il peso da dare alla palla"));
-palla["peso"] = modifica;
-
-console.log("Dati modificati: " , palla);
+console.log(constantObject); // {name: "Pippo", age: 20}
