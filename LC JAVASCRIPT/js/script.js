@@ -1,6 +1,8 @@
-let string = 'Qui';
-let stringTwo = 'Qua';
-console.log(
-  `${string} Quo ${stringTwo} Andarono al mercato`
-);
-//Qui Quo Qua Andarono al mercato
+//Funzione arrow
+const myFunction = () => 1 + 1; //su una sola riga il return è automatico
+
+
+//Funzione normale
+const myFunction = function () {
+   return 1 + 1;
+}
