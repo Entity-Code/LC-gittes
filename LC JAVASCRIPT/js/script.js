@@ -1,10 +1,8 @@
-const students = {
-  name: 'Paolo',
-  age: 30,
-  email: 'paolo@email.it'
-};
-
-//prendimi i valori delle proprietà name ed email di students
-const {name, email} = students;
-
-console.log(name, email);
+const students = ['Paolo', 'Giulia', 'Marco'];
+//arrow function con 3 argomenti
+students.forEach((element, index, array) => {
+  console.log(element, index);
+});
+// Paolo 0
+// Giuglia 1
+// Marco 2
