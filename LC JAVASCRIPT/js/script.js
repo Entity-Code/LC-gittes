@@ -1,15 +1,6 @@
-console.log(constantArray);
-
-const constantArray = [];
-constantArray.push(1);
-console.log(constantArray);
-// [1];
-
-const constantObject = {
-  'name' : 'Pippo'
-}
-constantObject.age = 20
-constantObject.name = "Franco";
-
-
-console.log(constantObject); // {name: "Pippo", age: 20}
+let string = 'Qui';
+let stringTwo = 'Qua';
+console.log(
+  `${string} Quo ${stringTwo} Andarono al mercato`
+);
+//Qui Quo Qua Andarono al mercato
