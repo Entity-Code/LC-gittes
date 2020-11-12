@@ -9,19 +9,22 @@
 // // expected output: Array [2, 8, 18, 32]
 
 
-//filtrami gli elementi 'Paolo' METODO TRADIZIONALE CON IL FOR
-const students = ['Paolo', 'Giulia', 'Marco'];
-var newArr = [];
-for (let i = 0; i < students.length; i++) {
-   let element = students[i];
-   console.log(element);
-   if (element === "Paolo") {
-      newArr.push(element);
-   }
-}
-console.log(students, newArr);
+// //filtrami gli elementi 'Paolo' METODO TRADIZIONALE CON IL FOR
+// const students = ['Paolo', 'Giulia', 'Marco'];
+// var newArr = [];
+// for (let i = 0; i < students.length; i++) {
+//    let element = students[i];
+//    console.log(element);
+//    if (element === "Paolo") {
+//       newArr.push(element);
+//    }
+// }
+// console.log(students, newArr);
+
+const numbers = [3,4,6,7,9,11];
 
 //EQUIVALENTE CON FILTER
-const filteredStudents = students.filter((element) => element === 'Paolo');
+const filteredNumbers = numbers.filter((element) => element % 2 !== 0);
 
-console.log(students, newArr);
+
+console.log(numbers, filteredNumbers);
