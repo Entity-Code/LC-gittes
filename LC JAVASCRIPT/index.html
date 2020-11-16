@@ -9,10 +9,11 @@
    <body>
 
 
-      <div id="root">
-         <p>{{ message }}</p>
-         <!-- aggancio v-model di vue -->
-         <input v-model="message">
+      <div id="app">
+
+         <input v-model="nome">
+         <input v-model="cognome">
+         <p>Ciao{{nome + " " + cognome}}</p>
       </div>
 
 

@@ -1,7 +1,13 @@
-// mi aggancio ad un elemento principale nel quale creerò componenti dinamicamente
-var root = new Vue({
-  el: '#root',
-  data: {
-    message: 'Hello World'
-  }
-})
+// Utilizzare due input, in cui inseriremo Nome e Cognome.
+// In un paragrafo utilizzare Nome e Cognome per salutare l'utente
+
+
+//istanza vue
+
+var app = new Vue({
+   el: "#app",
+   data: {
+      nome: "nome",
+      cognome: "cognome",
+   }
+});
