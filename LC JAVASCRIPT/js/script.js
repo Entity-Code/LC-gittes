@@ -37,12 +37,19 @@ var app = new Vue({
    data: {
       nome: "nome",
       cognome: "cognome",
-      mieClassi: "classe1 classe2"
+      mieClassi: "classe2"
    },
    methods: {
-      miaFunzione: function() {
+      changeTitle: function() {
          //puro javascript
-         alert("ciao dal metodo interno");
+
+         //this si riferisce al dato "mieClassi", sostituendo il suo valore
+         if (this.mieClassi === "classe2") {
+            this.mieClassi = "classe1";
+         } else {
+            this.mieClassi = "classe2";
+         }
+         console.log(this.cognome);
       }
    }
 });
