@@ -8,13 +8,21 @@
    </head>
    <body>
 
+      <!-- V-MODEL -->
+      <!-- <div id="app">
+         <input v-model="nome">
+         <input v-model="cognome">
+         <p>Ciao{{nome + " " + cognome}}</p>
+      </div> -->
 
       <div id="app">
-
+         <h1 v-bind:class="mieClassi">Titolo</h1>
          <input v-model="nome">
          <input v-model="cognome">
          <p>Ciao{{nome + " " + cognome}}</p>
       </div>
+
+
 
 
 

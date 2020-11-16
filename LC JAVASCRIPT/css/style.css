@@ -4,31 +4,11 @@
    box-sizing: border-box;
 }
 
-/* regole header */
-header {
-   display: flex;
-   min-height: 100px;
-   border: solid 1px red;
-   justify-content: flex-end;
+/* v-bind */
+.classe1{
+   background-color: yellow;
 }
 
-.mainnav > ul > li {
-   display: inline-block;
-   padding: 5px;
-}
-
-.dropitem{
-   position: relative;
-}
-
-.dropdown{
-   display: none;
-   position: absolute;
-   top: 30px;
-   left: 0;
-
-}
-
-.dbloc{
-   display: block;
+.classe2{
+   color: red;
 }
