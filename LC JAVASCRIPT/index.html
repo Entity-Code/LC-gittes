@@ -3,11 +3,17 @@
    <head>
       <meta charset="utf-8">
       <link rel="stylesheet" href="css/style.css">
+      <script src="https://cdn.jsdelivr.net/npm/vue"></script>
       <title>LC</title>
    </head>
    <body>
 
 
+      <div id="root">
+         <p>{{ message }}</p>
+         <!-- aggancio v-model di vue -->
+         <input v-model="message">
+      </div>
 
 
 
@@ -17,8 +23,6 @@
 
 
 
-      <!-- link jquery -->
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
       <!-- link js -->
       <script type="text/javascript" src="js/script.js"></script>
    </body>
