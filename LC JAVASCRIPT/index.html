@@ -15,14 +15,26 @@
          <p>Ciao{{nome + " " + cognome}}</p>
       </div> -->
 
-      <div id="app">
+      <!-- V-BIND -->
+      <!-- <div id="app">
          <h1 v-bind:class="mieClassi">Titolo</h1>
          <input v-model="nome">
          <input v-model="cognome">
          <p>Ciao{{nome + " " + cognome}}</p>
+      </div> -->
+
+      <!-- METHODS : FUNZIONI/EVENTI -->
+      <div id="app">
+         <h1 v-bind:class="mieClassi">Titolo</h1>
+
+         <input v-model="nome">
+         <input v-model="cognome">
+
+         <p>Ciao{{nome + " " + cognome}}</p>
+
+         <!-- al click del bottone evoca la funzione in vue -->
+         <button @click="miaFunzione">Bottone</button>
       </div>
-
-
 
 
 

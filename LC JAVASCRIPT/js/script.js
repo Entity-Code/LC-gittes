@@ -17,7 +17,19 @@ var app = new Vue({
 });
 */
 
-//V-bind
+// //V-bind
+// var app = new Vue({
+//    // elemento da selezionare
+//    el: "#app",
+//    // dati
+//    data: {
+//       nome: "nome",
+//       cognome: "cognome",
+//       mieClassi: "classe1 classe2"
+//    }
+// });
+
+
 var app = new Vue({
    // elemento da selezionare
    el: "#app",
@@ -26,5 +38,11 @@ var app = new Vue({
       nome: "nome",
       cognome: "cognome",
       mieClassi: "classe1 classe2"
+   },
+   methods: {
+      miaFunzione: function() {
+         //puro javascript
+         alert("ciao dal metodo interno");
+      }
    }
 });
