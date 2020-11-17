@@ -30,26 +30,46 @@ var app = new Vue({
 // });
 
 
+// var app = new Vue({
+//    // elemento da selezionare
+//    el: "#app",
+//    // dati
+//    data: {
+//       nome: "nome",
+//       cognome: "cognome",
+//       mieClassi: "classe2"
+//    },
+//    methods: {
+//       changeTitle: function() {
+//          //puro javascript
+//
+//          //this si riferisce al dato "mieClassi", sostituendo il suo valore
+//          if (this.mieClassi === "classe2") {
+//             this.mieClassi = "classe1";
+//          } else {
+//             this.mieClassi = "classe2";
+//          }
+//          console.log(this.cognome);7
+//
+//       }
+//    }
+// });
+
 var app = new Vue({
    // elemento da selezionare
    el: "#app",
    // dati
    data: {
-      nome: "nome",
-      cognome: "cognome",
-      mieClassi: "classe2"
+      titleShow: false,
+      names: ['Michele', 'Nicola', 'Mario']
    },
    methods: {
-      changeTitle: function() {
-         //puro javascript
-
-         //this si riferisce al dato "mieClassi", sostituendo il suo valore
-         if (this.mieClassi === "classe2") {
-            this.mieClassi = "classe1";
+      toggleVisible: function () {
+         if (this.titleShow === true) {
+            this.titleShow = false
          } else {
-            this.mieClassi = "classe2";
+            this.titleShow = true
          }
-         console.log(this.cognome);
       }
    }
 });
