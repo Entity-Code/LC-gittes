@@ -55,21 +55,36 @@ var app = new Vue({
 //    }
 // });
 
-var app = new Vue({
-   // elemento da selezionare
+// var app = new Vue({
+//    // elemento da selezionare
+//    el: "#app",
+//    // dati
+//    data: {
+//       titleShow: false,
+//       names: ['Michele', 'Nicola', 'Mario']
+//    },
+//    methods: {
+//       toggleVisible: function () {
+//          if (this.titleShow === true) {
+//             this.titleShow = false
+//          } else {
+//             this.titleShow = true
+//          }
+//       }
+//    }
+// });
+
+// todo list
+var container = new Vue({
    el: "#app",
-   // dati
+
    data: {
-      titleShow: false,
-      names: ['Michele', 'Nicola', 'Mario']
+      items: ["cucinare", "stirare", "lavorare", "dormire"],
    },
+
    methods: {
-      toggleVisible: function () {
-         if (this.titleShow === true) {
-            this.titleShow = false
-         } else {
-            this.titleShow = true
-         }
+      addItem() {
+         console.log("newItem");
       }
    }
 });
