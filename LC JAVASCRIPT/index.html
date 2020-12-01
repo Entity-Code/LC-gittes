@@ -5,55 +5,18 @@
       <link rel="stylesheet" href="css/style.css">
       <script src="https://cdn.jsdelivr.net/npm/vue"></script>
       <title>LC</title>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.0/axios.min.js ">
+      </script>
    </head>
    <body>
 
-      <!-- V-MODEL -->
-      <!-- <div id="app">
-         <input v-model="nome">
-         <input v-model="cognome">
-         <p>Ciao{{nome + " " + cognome}}</p>
-      </div> -->
-
-      <!-- V-BIND -->
-      <!-- <div id="app">
-         <h1 v-bind:class="mieClassi">Titolo</h1>
-         <input v-model="nome">
-         <input v-model="cognome">
-         <p>Ciao{{nome + " " + cognome}}</p>
-      </div> -->
-
-      <!-- METHODS : FUNZIONI/EVENTI -->
-      <!-- <div id="app">
-         <h1 v-bind:class="mieClassi">Titolo</h1>
-
-          input -->
-         <!-- <input v-model="nome">
-         <input v-model="cognome">
-
-          output -->
-         <!-- <p>Ciao {{ nome + " " + cognome}}</p>
-
-          al click del bottone evoca la funzione in vue -->
-         <!-- <button @click="changeTitle">Bottone</button>
-      </div> -->
 
       <div id="app">
-         <h1 v-if="titleShow">Qualcosa che risponde ad una condizione</h1>
-         <h1 v-else>Alternativa</h1>
-         <button type="button" name="button" @click="toggleVisible">Cliccami</button>
-
-         <ol>
-            <li v-for="name in names">
-               {{ name }}
-            </li>
-         </ol>
-
+         <!-- stampo la lista -->
+         <ul>
+            <li >{{ item }} </li>
+         </ul>
       </div>
-
-
-
-
 
 
 
