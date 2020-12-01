@@ -2,17 +2,28 @@
    margin:0;
    padding:0;
    box-sizing: border-box;
+   font-size: 40px;
 }
 
-/* v-bind */
-.classe1{
-   background-color: yellow;
+
+
+#app{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100vh;
+   flex-wrap: wrap;
+}
+.square{
+   background-color: lightblue;
+   border: 1px solid black;
+   width: calc(100% / 6);
+   height: calc(100% / 6);
+   text-align: center;
+   line-height: 100px;
 }
 
-.classe2{
-   color: red;
-}
 
-span{
-   font-size: 50px;
-}
+/* js classes */
+.yellow{background: yellow;}
+.green{background:green;}

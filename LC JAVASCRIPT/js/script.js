@@ -1,21 +1,32 @@
-// //prendimi in questo percorso dei dati
-// axios.get("https://flynn.boolean.careers/exercises/api/random/int")
-// .then(function(risposta) { //salvameli in "risposta"
-//    //salva l'oggetto ritornato in una costante (result)
-// 	const result = risposta.data; // interrogalo con .data
-//    console.log(result); //mostramelo
-// });
-
+// Griglia 6x6, ad ogni click parte una richiesta AJAX che prende un numero random da 1 a 9. Se è  <= 5 il quadrato diventa giallo, se è > di 5 il quadrato diventa verde. Il numero ottenuto appare al centro del quadrato.
+const randNum = "https://flynn.boolean.careers/exercises/api/random/int";
 
 var app = new Vue({
    el: "#app",
    data: {
-      item: "",
+      numbers: []
    },
-   mounted: function () {
-      axios.get("https://flynn.boolean.careers/exercises/api/random/mail")
-      .then((risposta) => {
-         console.log(risposta.data);
-      });
+   mounted: function() {
+      for (let i = 0; i < 36; i++) {
+         this.numbers.push('');
+      }
+   },
+   methods: {
+      genera: function (index) {
+         axios.get(randNum)
+         .then(risposta => {
+
+            let pushedNum = risposta.data.response;
+
+            // console.log(pushedNum);
+            // this.numbers[0]= pushedNum;
+            this.$set(this.numbers, index, pushedNum)
+            console.log(this.numbers);
+
+
+
+
+         });
+      }
    }
-});
+})

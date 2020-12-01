@@ -11,13 +11,19 @@
    <body>
 
 
-      <div id="app">
-         <!-- stampo la lista -->
-         <ul>
-            <li >{{ item }} </li>
-         </ul>
-      </div>
 
+      <div id="app">
+
+
+         <div @click="genera(index)" class="square" v-for="(number, index) in numbers">
+            <div v-if="number == '' ">cliccami</div>
+            <div v-else :class="number <= 5 ? 'yellow' : 'green'">{{number}}</div>
+            <!-- <div v-else-if="number <= 5" class="green">{{number}}</div>
+            <div v-else-if="number > 5" class="yellow">{{number}}</div> -->
+         </div>
+
+
+      </div>
 
 
 
