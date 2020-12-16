@@ -7,7 +7,7 @@ var app = new Vue({
       numbers: []
    },
    mounted: function() {
-      for (let i = 0; i < 36; i++) {
+      for (let i = 0; i < 36; i++) { 
          this.numbers.push('');
       }
    },
@@ -22,11 +22,10 @@ var app = new Vue({
             // this.numbers[0]= pushedNum;
             this.$set(this.numbers, index, pushedNum)
             console.log(this.numbers);
-
-
-
-
          });
       }
    }
 })
+
+console.log("Hello World");
+console.log("Not Hello World");
